@@ -1,38 +1,117 @@
-.App {
+body {
+  background-color: gainsboro;
+}
+header {
+  background-image: url(https://images.ctfassets.net/9htf9uzhsn4z/7DHS4856GQBRUWjgbhvjvr/c5127efa5ef74702d44658f3bca43bc5/2023-home-hero-960.jpg?fm=webp&fm=webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 20px;
   text-align: center;
+  min-height: 480px;
+  display: flex;
+
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  margin-left: 20%;
+  font-size: 48px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.search-form {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  gap: 1rem;
+  margin: 2rem 0;
+  z-index: 0;
+  width: 80%;
+}
+#outlined-search {
+  background-color: #fff;
+  width: 500px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  padding-left: 0;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 400px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul li img {
+  width: 176px;
+  height: 256px;
+  align-self: center;
+}
+
+ul li p {
+  max-height: 60px;
+}
+
+#book-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 720px;
+  max-height: 480px;
+  margin: auto;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.close-button {
+  background-color: #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.book-detail {
+}
+@media only screen and (max-width: 767px) {
+  header {
+    background-image: url(https://images.ctfassets.net/9htf9uzhsn4z/7DHS4856GQBRUWjgbhvjvr/c5127efa5ef74702d44658f3bca43bc5/2023-home-hero-960.jpg?fm=webp&fm=webp);
+    text-align: left;
+    align-items: normal;
   }
-  to {
-    transform: rotate(360deg);
+  header h1 {
+    margin-left: 0;
+  }
+  /* Stil değişiklikleri burada */
+}
+
+/* Tabletlerde */
+@media only screen and (min-width: 768px) {
+  /* Stil değişiklikleri burada */
+  .search-form {
+    max-width: 620px;
   }
 }
